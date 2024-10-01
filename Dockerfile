@@ -30,4 +30,5 @@ COPY . /app
 
 EXPOSE 8080
 
-CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:8080 app:app & python3 Chatgpt"]
+CMD gunicorn app:app & python3 Chatgpt
+#CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:8080 app:app & python3 Chatgpt"]
