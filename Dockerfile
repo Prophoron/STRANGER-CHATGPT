@@ -49,6 +49,6 @@ COPY . /app
 
 EXPOSE 8000
 
-CMD gunicorn app:app & python3 bot.py
+CMD gunicorn app:app & python3 Chatgpt
 
 #CMD ["python3", "Chatgpt"]
