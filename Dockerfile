@@ -47,7 +47,7 @@ RUN apt-get -y upgrade
 RUN dpkg-reconfigure locales
 COPY . /app
 
-#EXPOSE 8080
+EXPOSE 8000
 
 CMD gunicorn app:app & python3 bot.py
 
