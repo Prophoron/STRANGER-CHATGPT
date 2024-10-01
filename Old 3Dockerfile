@@ -1,3 +1,4 @@
+#with the help of tech vj and mine
 FROM python:3.10.8
 WORKDIR /app
 COPY ./ /app
