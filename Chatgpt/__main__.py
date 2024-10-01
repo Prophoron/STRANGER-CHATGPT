@@ -1,6 +1,6 @@
 import asyncio
 import importlib
-from config import START_IMG,OWNER_ID
+from config.py import START_IMG,OWNER_ID
 from pyrogram import idle
 
 from Chatgpt import LOGGER, Shashank
