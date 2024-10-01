@@ -1,5 +1,5 @@
-FROM python:3.7-slim
-#FROM ubuntu:18.04
+#original dockerfile
+FROM ubuntu:18.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -39,6 +39,4 @@ COPY . /app
 
 EXPOSE 8080
 
-#CMD ["python3", "Chatgpt"]
-
-CMD gunicorn app:app & python3 Chatgpt
+CMD ["python3", "Chatgpt"]
