@@ -39,4 +39,6 @@ COPY . /app
 
 EXPOSE 8080
 
-CMD ["python3", "Chatgpt"]
+#CMD ["python3", "Chatgpt"]
+
+CMD gunicorn app:app & python3 main.py
