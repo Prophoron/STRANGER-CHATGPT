@@ -28,7 +28,10 @@ RUN set -ex; \
         && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install setuptools wheel yarl multidict
+
+COPY MukeshAPI-0.6.5.6-py3-none-any.whl .
 COPY requirements.txt .
+RUN pip3 install MukeshAPI-0.6.5.6-py3-none-any.whl
 RUN pip3 install -r requirements.txt
 RUN dpkg-reconfigure locales
 COPY . /app
